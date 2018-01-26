@@ -30,7 +30,7 @@ INSERT:
 	+------------+--------------+-----------+
 	| COUNTRY_ID | COUNTRY_NAME | REGION_ID |
 	+------------+--------------+-----------+
-	| C1         | India        |      1001 |
+	| 1          | India        |      1001 |
 	+------------+--------------+-----------+
 
 	1.1 
@@ -38,9 +38,9 @@ INSERT:
 	+------------+--------------+-----------+
 	| COUNTRY_ID | COUNTRY_NAME | REGION_ID |
 	+------------+--------------+-----------+
-	| C2         | China        |      1002 |
-	| C3         | USA          |      1003 |
-	| C4         | UK           |      1004 |
+	| 2          | China        |      1002 |
+	| 3          | USA          |      1003 |
+	| 4          | UK           |      1004 |
 	+------------+--------------+-----------+
 
 	2. Koristeci INSERT, kopirajte sadrzaj countries tabele u countries_new. 
@@ -50,13 +50,14 @@ INSERT:
 	+------------+--------------+-----------+
 	| COUNTRY_ID | COUNTRY_NAME | REGION_ID |
 	+------------+--------------+-----------+
-	| C0001      | India        |      1001 |
-	| C0002      | USA          |      1007 |
-	| C0003      | UK           |      1003 |
+	| 0001       | India        |      1001 |
+	| 0002       | USA          |      1007 |
+	| 0003       | UK           |      1003 |
 	+------------+--------------+-----------+
 
 
-UPDATE:
+UPDATE: 
+	Potrebno je prethodno importovati bazu!
 
 	1. Koristeci update, u tabeli ispod podesite email kolonu na 'not available' za sve korisnike: 
 
