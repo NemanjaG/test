@@ -18,7 +18,7 @@ CREATE TABLE:
 	+--------------+---------------+------+-----+---------+-------+
 	| Field        | Type          | Null | Key | Default | Extra |
 	+--------------+---------------+------+-----+---------+-------+
-	| COUNTRY_ID   | varchar(2)    | NO   | PRI |         |       |
+	| COUNTRY_ID   | int(2)        | NO   | PRI |         |       |
 	| COUNTRY_NAME | varchar(40)   | YES  |     | NULL    |       |
 	| REGION_ID    | decimal(10,0) | YES  |     | NULL    |       |
 	+--------------+---------------+------+-----+---------+-------+
