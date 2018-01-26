@@ -1,0 +1,25 @@
+version: "2"
+
+services:
+  mysql:
+    image: mariadb
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      explicit_defaults_for_timestamp: 1
+    volumes:
+      - ./database:/docker-entrypoint-initdb.d
+
+  pma:
+    image: phpmyadmin/phpmyadmin
+    restart: unless-stopped
+    environment:
+      PMA_HOST: mysql
+      PMA_USER: root
+      PMA_PASSWORD: root
+      PHP_UPLOAD_MAX_FILESIZE: 1G
+      PHP_MAX_INPUT_VARS: 1G
+    networks:
+      - default
+    ports:
+      - "8123:80"
